@@ -1,0 +1,43 @@
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  .chevron {
+    &.up > svg {
+      transform: scaleY(-1);
+    }
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 4;
+    top: 48px;
+    right: 16px;
+    overflow: hidden;
+    min-width: 120px;
+    color: #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+    &__link {
+      padding: 4px 7px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 16px;
+      &:hover {
+        color: #FFFFFF;
+        background-color: #338dc1;
+      }
+  
+      &:not(:last-of-type) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

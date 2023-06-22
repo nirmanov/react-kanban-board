@@ -1,0 +1,8 @@
+.board {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 50px 24px;
+  grid-auto-flow: row;
+}
